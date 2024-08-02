@@ -1,0 +1,190 @@
+*{
+    margin:0;
+    padding:0
+}
+
+
+navbar{
+    position: relative;
+}
+.navbar{
+    display: flex;
+    position:sticky;
+    top:0;
+    background-color: #FEFAF6;
+    color:#102C57;
+    height:6rem;
+    border-bottom:#102C57;
+}
+#logo{
+    margin:1rem;
+    display:inline-block;
+    
+
+}
+.onBigScreens{
+    display:inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-left:5rem;
+}
+.onBigScreens a{
+    display:inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #102C57;
+    font-size: 1.5rem;
+    margin: 1rem;
+    padding:0.5rem 1rem;
+    transition: all 0.5s;
+}
+.onBigScreens a:hover{
+    color:red;
+   
+}
+.onBigScreens a::before{
+    content: "";
+    position: absolute;
+    top:-5px;
+    left:-5px;
+    border: 2px solid #102C57;
+    height:30%;
+    width:20%;
+    border-bottom: 0;
+    border-right: none;
+    transition: all 0.5s;
+}
+.onBigScreens a::after{
+    content: "";
+    position: absolute;
+    bottom:-5px;
+    right:-5px;
+    border: 2px solid #102C57;
+    height:30%;
+    width:20%;
+    border-top: 0;
+    border-left: none;
+    transition: all 0.5s;
+}
+.onBigScreens a:hover:before,.onBigScreens a:hover:after{
+    height:100%;
+    width:100%;
+    border-color: red;
+}
+.onBigScreens a li{
+    list-style-type: none;
+    padding: 0.2rem;
+    color:#102C57;
+    text-align: center;
+}
+
+
+
+.events-anchor{
+    position: relative;
+}
+.event-list{
+    visibility:hidden;
+    position: absolute;
+    top:110%;
+    right:5%;
+    background-color: #fefaf6b9;
+    border-radius: 0.5rem;
+    padding:1rem;
+}
+.events-anchor:hover{
+    .event-list{
+        visibility:visible;
+    }
+}
+.event-list li:hover{
+    color:red;
+}
+/* On mobile screens */
+
+.onMobileScreens{
+    height:80vh;
+    width: 30vw;
+    position:absolute;
+    right:0px;
+    top:100%;
+    background-color: #102C57;
+    display: inline-flex;
+    flex-direction: column;
+}
+.onMobileScreens a{
+    padding: 2rem;
+    font-size: 2rem;
+    color: #FEFAF6;
+    text-decoration: none;
+}
+.onMobileScreens a:hover{
+    color:red;
+}
+.onMobileScreens a li{
+    list-style: none;
+    color:#102C57;
+    text-align: center;
+    padding: 0.2rem;
+}
+.events-anchor-mob{
+    position: relative;
+}
+.event-list-mob{
+    visibility:hidden;
+    position: absolute;
+    right:100%;
+    top:20%;
+    background-color: #FEFAF6;
+    border-radius: 0.5rem;
+    padding:1rem;
+}
+.events-anchor-mob:hover{
+    .event-list-mob{
+        visibility:visible;
+    }
+}
+.event-list-mob li:hover{
+    color: red;
+}
+
+.Menu{
+    font-size: 3rem;
+    padding: 1rem;
+    font-weight: bold;
+    margin-right: 2rem;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right:0.5rem;
+}
+.hide{
+    display:none;
+}
+
+@media screen and (max-width:1000px){
+    .onBigScreens a{
+        font-size:1.2rem;
+    }
+    
+}
+@media screen and (max-width:850px) {
+    .onBigScreens{
+        display: none;
+    }
+    .Menu{
+        display:inline-block;
+    }
+}
+@media screen and (max-width:650px){
+    .onMobileScreens a{
+        font-size: 1.2rem;
+       
+    }
+}
+@media screen and (max-width:500px){
+    .onMobileScreens{
+        width:45vw;
+    }
+}

@@ -1,0 +1,205 @@
+
+
+.heading{
+    background: linear-gradient(to bottom right,#071952 ,#0D1282,#92C7CF);
+    padding: 1.5rem;
+}
+#CFC{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    padding:2rem;
+    font-size:5rem;
+    color:white;
+    margin-bottom:1rem;
+}
+
+#tagline{
+    text-align:center;
+    font-family:Arial, Helvetica, sans-serif;
+    color:burlywood;
+    font-size: 1.5rem;
+    margin-bottom:2rem;
+}
+#subhead{
+    margin:2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    display: inline-block;
+}
+.box{
+    display:flex;
+    margin:1rem;
+}
+.div1{
+    display: inline-flex;
+    flex-direction: column;
+    width:50%;
+}
+#intro{
+    display: inline-block;
+    
+    padding: 0 0.5rem 2rem 2rem;
+    font-size:1.5rem;
+}
+#imageDiv{
+    display:inline-block;
+    height:100%;
+    overflow-x:hidden;
+}
+#image1{
+    height:24rem;
+    margin:auto;
+}
+@media screen and (max-width:850px){
+    #CFC{
+    font-size: 3.5rem;
+    }
+    #image1{
+        display:none;
+    }
+    .div1{
+        width:100%;
+    }
+}
+@media screen and (max-width:650px){
+    #CFC{
+        font-size: 30px;
+        margin:0;
+    }
+    .register{
+        font-size:16px;
+    }
+    #tagline{
+        font-size:1.2rem;
+    }
+    #subhead{
+        font-size: 1.5rem;
+    }
+    #intro{
+        font-size: 16px;
+    }
+}
+.details{
+    background: linear-gradient(to bottom left,#7386D5,#A0B6F5);
+    display:flex;
+    flex-direction: column;
+}
+.detailsBoxContainer{
+    display:flex;
+    justify-content: space-evenly;
+
+}
+#aboutEvent,#rules{
+     text-align: center;
+     font-family: 'Times New Roman', Times, serif;
+     padding: 2rem;
+}
+.detailsBox{
+    display: inline-block;
+    border-radius: 2rem;
+    background-color: #FFF46E;
+    border:2px solid #FFF46E;
+    margin:2rem;
+    padding:1rem;
+    width:15rem;
+    font-size: 18px;
+}
+#themes{
+    text-align: center;
+}
+.detailsBox:hover{
+    background-color: #92C7CF;
+    border:2px solid #0D1282;
+    cursor:pointer;
+}
+@media screen and (max-width:1000px)
+{
+    .detailsBoxContainer{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:700px){
+    .detailsBox{
+        width:100%;
+    }
+}
+
+.rulesAndRegulations{
+     padding:2rem;
+}
+.rulesAndRegulations ul li{
+    margin:0.7rem;
+    margin-left: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.codeOfConduct{
+    background: linear-gradient(to bottom left,#40679E,#92C7CF,#FFA1C9,#FF5BAE);
+    padding:2rem;
+}
+.coconduct{
+    text-align:center;
+    font-size: 3rem;
+    padding:2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.codeOfConduct ul li{
+    margin:1.5rem;
+    font-size:1.5rem;
+}
+@media screen and (max-width:400px){
+    .codeOfConduct ul li{
+        font-size:1.2rem;
+    }
+}
+
+#FAQs{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#headFAQ{
+    padding:2rem;
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.questionBox{
+    width:80%;
+    background-color: #A0B6F5;
+    border-radius: 2rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+    margin:1rem;
+}
+.ansBox{
+    position:relative;
+    top:110%;
+    right:0;
+    background-color: #FFF46E;
+    border-radius: 2rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+}
+.questionBox:hover{
+    background-color: #FFF46E;
+}
+.register{
+    background-color: transparent;
+    border:2px solid #071952;
+    display: inline-block;
+    padding: 1.2rem 2rem;
+    border-radius:2rem;
+    color:#071952;
+    text-align: center;
+    width:4rem;
+    margin:4rem;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.register:hover{
+    background-color: #071952;
+    color: white;
+}

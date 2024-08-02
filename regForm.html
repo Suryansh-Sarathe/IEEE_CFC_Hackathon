@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="regForm.css">
+    <link rel="shortcut icon" href="images/shorticon_code.avif" type="image/x-icon">
+</head>
+<body>
+        <h1 id="regCFC">CFC'24 Registration</h1>
+        <div class="regForm">
+            <label for="name" class="req">Name:</label>
+            <input type="text" id="name" name="name" required>
+      
+            <label for="email" class="req">Email:</label>
+            <input type="email" id="email" name="email" required>
+      
+            <label for="phone" class="req">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+      
+            <label for="college">College/University:</label>
+            <input type="text" id="college" name="college">
+      
+            <label for="team">Team Name:</label>
+            <input type="text" id="team" name="team">
+
+            <label for="theme" class="req">Theme:</label>
+            <select name="theme" id="theme"  required>
+                <option selected value="AI_for_Good">AI for Good</option>
+                <option value="IoT_Revolution">IoT Revolution</option>
+                <option value="EduTech">EduTech</option>
+                <option value="Accessebility">Accessebility</option>
+            </select>
+      
+            <input type="submit" id="button" onclick=submit()></input>
+        </div>
+    <script src="regForm.js"></script>
+</body>
+</html>

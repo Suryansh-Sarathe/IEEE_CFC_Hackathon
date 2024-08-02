@@ -1,0 +1,54 @@
+body{
+    background-color: skyblue;
+}
+#regCFC{
+    text-align: center;
+    margin:3rem;
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.regForm{
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    padding:2rem;
+    max-width: 30rem;
+    background-color: navy;
+    border-radius: 2rem;
+    color:white;
+}
+.req::after{
+    content: "*";
+    color:red;
+    font-size: 18px;
+    position: relative;
+    top:2px;
+    right:-4px;
+}
+input,#theme{
+    border-radius: 0.4rem;
+    height:20px;
+    margin:2rem 0;
+    border:2px solid white;
+}
+input:focus{
+    background-color: rgba(128, 128, 128, 0.813);
+}
+#button{
+    display: inline-block;
+    min-height:2rem;
+    min-width:5rem;
+    border-radius: 1.5rem;
+    border:2px solid white;
+    align-self: center;
+}
+#button:hover{
+    background-color: red;
+    color:white;
+    border:2px solid red;
+}
+@media screen and (max-width:400px){
+    #regCFC{
+        font-size: 2rem;
+    }
+}
